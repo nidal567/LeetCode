@@ -1,8 +1,6 @@
 class Solution:
     def minimumSteps(self, s: str) -> int:
-        output = 0
-        ans = 0
-    
+        output, ans = 0, 0
         for num in s:
             if num == '1':
                 output += 1  
