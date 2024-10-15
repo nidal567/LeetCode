@@ -1,6 +1,23 @@
 class Solution:
     def minimumSteps(self, s: str) -> int:
         output = 0
+        ans = 0
+    
+        for num in s:
+            if num == '1':
+                output += 1  
+            else: 
+                ans += output
+        return ans
+
+
+
+"""
+OLD ANSWER DID NOT WORK - TIME LIMIT EXCEEDED DUE TO POOR TIME COMPLEXITY
+
+class Solution:
+    def minimumSteps(self, s: str) -> int:
+        output = 0
         #string to list because strings are immutable
         s = list(s)
 
@@ -11,7 +28,7 @@ class Solution:
                 output += 1
         return output
 
-"""
+
 Think about string to list
 s = "110"
 s_list = list(s) #['1', '1', '0']
