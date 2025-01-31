@@ -10,5 +10,5 @@ class Solution:
             maxCount = max(counter[i], maxCount)
         return result
 
-    # follow up
+    # follow up with Boyer-Moore's Voting Method: incomplete
         
